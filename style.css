@@ -365,18 +365,23 @@ nav ul {
 footer {
   color: white;
   background-color: rgba(19, 28, 39, 1);
+  padding: 2rem 0; /* Added top and bottom padding */
 }
+
 .footer-wrapper {
   display: flex;
-  padding: 2rem;
+  padding: 2rem; /* You can adjust this value as needed */
   width: 90%;
   margin: auto;
   align-items: center;
   min-height: 10vh;
   flex-wrap: wrap;
+  justify-content: space-between; /* Space between items */
 }
+
 footer h5 {
   flex: 1 1 40rem;
+  font-size: 1.5rem; /* Increased font size for better visibility */
 }
 
 footer ul {
@@ -385,7 +390,34 @@ footer ul {
   flex: 1 1 40rem;
   justify-content: space-between;
   align-items: center;
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
 }
+
+footer ul li {
+  margin: 0 1rem; /* Space between icons */
+}
+
+footer ul li a {
+  display: inline-block;
+  width: 40px; /* Fixed size for the icons */
+  height: 40px; /* Fixed size for the icons */
+  border-radius: 50%; /* Make them circular */
+  background-color: rgba(255, 255, 255, 0.2); /* Light background for contrast */
+  padding: 10px; /* Padding inside the circle */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover */
+}
+
+footer ul li a img {
+  width: 100%; /* Make the icon fill the container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+footer ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.5); /* Change background on hover */
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+}
+
 
 /**** MEDIA QUERY ****/
 
